@@ -8,6 +8,11 @@ yangshun:
     x: yangshunz
     github: yangshun
 
+lily:
+  name: Lily Jiang
+  title: DAQ Member
+  image_url: /img/lily/banana.jpg
+
 slorber:
   name: Sébastien Lorber
   title: Docusaurus maintainer

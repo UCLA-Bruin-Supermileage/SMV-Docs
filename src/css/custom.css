@@ -28,3 +28,15 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Profile pic */
+img[src$="#lily"] {
+  display: inline-block;
+  margin-left: left; 
+  margin-right: 20px; 
+  width: 200px; 
+  height: 200px;
+}
+
+
+
