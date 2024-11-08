@@ -1,5 +1,6 @@
 # Meet the Developers!
 - [Howard](./Howard)
+- [lily](./lily)
 - [Daphne](./Daphne)
 - [Abhiram](./Abhiram)
 - [Aidan](./Aidan)
