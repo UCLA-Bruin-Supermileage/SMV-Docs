@@ -10,6 +10,13 @@
   overflow: hidden;
 }
 
+.underConstruction {
+  padding: 4rem 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;

@@ -6,7 +6,6 @@ tags: [hola, docusaurus]
 ---
 
 Summary
-
 <!-- truncate -->
 Here are some headings
 # H1
