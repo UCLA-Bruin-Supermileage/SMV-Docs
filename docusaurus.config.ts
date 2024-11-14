@@ -2,9 +2,12 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'The SMV Docs',
+  tagline: 'The documentation dump for SMV',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -32,6 +35,8 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           editUrl:
             'https://github.com/Howard-Z/SMV-Docs/blob/main/',
         },
@@ -41,6 +46,8 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -55,6 +62,15 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+  ],
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
   ],
 
   themeConfig: {
@@ -92,22 +108,18 @@ const config: Config = {
               label: 'Documentation',
               to: '/docs/intro',
             },
+            {
+              label: 'Blog',
+              to: '/blog',
+            },
           ],
         },
         {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Join our Slack!',
+              href: 'https://join.slack.com/t/bruinsupermileage/shared_invite/zt-2rghriq7o-4GJrKA1QMkOhhSyjfngC8Q',
             },
           ],
         },
@@ -115,17 +127,13 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/Howard-Z/SMV-Docs',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Bruin Racing Supermilage Vehicle, Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
