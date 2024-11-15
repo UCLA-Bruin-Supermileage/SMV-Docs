@@ -133,7 +133,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Bruin Racing Supermilage Vehicle, Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Bruin Racing Supermileage Vehicle, Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
