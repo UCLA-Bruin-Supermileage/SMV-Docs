@@ -7,7 +7,7 @@ function Card(props) {
     }
     
     return (
-        <div className="card">
+        <div className="card size-24">
             <img className="card-image" src={useBaseUrl(pfp_url)} alt="profile picture"></img>
             <h2 className="card-title">{props.username}</h2>
             <p className="card-text">Placeholder test.</p>
