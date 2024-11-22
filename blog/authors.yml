@@ -1,3 +1,4 @@
+#default author, here for future reference
 yangshun:
   name: Yangshun Tay
   title: Front End Engineer @ Facebook
@@ -8,11 +9,7 @@ yangshun:
     x: yangshunz
     github: yangshun
 
-lily:
-  name: Lily Jiang
-  title: DAQ Member
-  image_url: /img/lily/banana.jpg
-
+#default author, also here for future reference
 slorber:
   name: Sébastien Lorber
   title: Docusaurus maintainer
@@ -26,3 +23,36 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
+
+lily:
+  name: Lily Jiang
+  title: DAQ Member
+  image_url: /img/lily/banana.jpg
+
+abhiram: 
+  name: Abhiram Voleti
+  title: DAQ Member
+  image_url: /img/abhiram/Abhiram.jpg
+  socials:
+    linkedin: abhiram-voleti-06971a235
+    github: avisawesome
+
+matthew:
+  name: Matthew Tsai
+  title: DAQ Co-Lead
+  image_url: /img/people/Matthew.jpg
+  socials:
+    linkedin: matthew-tsai1
+    github: matthewt-123
+
+howard:
+  name: Howard Zhu
+  title: DAQ Co-Lead
+  url: https://howard-zhu.com
+  image_url: /img/people/Howard.png
+  socials:
+    linkedin: howard-zhu21
+    github: Howard-Z
+
+
+
