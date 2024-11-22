@@ -7,21 +7,14 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/about/Meet-the-team">
-            Meet our Developers!
-          </Link>
-        </div>
+        {/* Update the title text */}
+        <h1 className="hero__title">Bruin Supermileage</h1>
+        
+        {/* Update the tagline text */}
+        <p className="hero__subtitle">We are Bruin Supermileage</p>
       </div>
     </header>
   );
@@ -35,9 +28,12 @@ export default function Home(): JSX.Element {
       description="The SMV documentation dump">
       <HomepageHeader />
       <main>
-        {/* <HomepageFeatures /> */}
-        <div>
-          <h1 className={clsx('underConstruction', styles.underConstruction)}>Under Construction 🚧</h1>
+        <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+          <img
+            src="img/my-large-image.png" // Replace with the path to your large image
+            alt="My large image"
+            style={{ maxWidth: '100%', height: 'auto' }}
+          />
         </div>
       </main>
     </Layout>

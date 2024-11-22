@@ -6,37 +6,26 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #1922c8;
-  --ifm-color-primary-dark: #0710bc;
-  --ifm-color-primary-darker: #070e98;
-  --ifm-color-primary-darkest: #010439;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #20609F; /* Base blue color */
+  --ifm-color-primary-dark: #1D558C; /* Slightly darker blue */
+  --ifm-color-primary-darker: #194A7A; /* Even darker blue */
+  --ifm-color-primary-darkest: #153F67; /* Darkest blue */
+  --ifm-color-primary-light: #2B6EB0; /* Slightly lighter blue */
+  --ifm-color-primary-lighter: #377CC1; /* Lighter blue */
+  --ifm-color-primary-lightest: #498BD3; /* Lightest blue */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(32, 96, 159, 0.1); /* Transparent blue highlight */
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #4094D6; /* Brighter blue for better contrast */
+  --ifm-color-primary-dark: #377FC0; /* Slightly darker blue */
+  --ifm-color-primary-darker: #306FAB; /* Even darker blue */
+  --ifm-color-primary-darkest: #285D92; /* Darkest blue */
+  --ifm-color-primary-light: #4BA5E1; /* Slightly lighter blue */
+  --ifm-color-primary-lighter: #5DB4EB; /* Lighter blue */
+  --ifm-color-primary-lightest: #70C2F5; /* Lightest blue */
+  --docusaurus-highlighted-code-line-bg: rgba(64, 148, 214, 0.3); /* Transparent blue highlight */
 }
-
-/* Profile pic */
-img[src$="#lily"] {
-  display: inline-block;
-  margin-left: left; 
-  margin-right: 20px; 
-  width: 200px; 
-  height: 200px;
-}
-
-
 
