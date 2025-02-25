@@ -1,3 +1,12 @@
+howard:
+  name: Howard Zhu
+  title: Data Aquisition Lead
+  url: https://howard-zhu.com
+  image_url: https://www.howard-zhu.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fportrait.88592462.jpg&w=750&q=75
+  socials:
+    linkedin: howard-zhu21
+    github: Howard-Z
+
 yangshun:
   name: Yangshun Tay
   title: Front End Engineer @ Facebook

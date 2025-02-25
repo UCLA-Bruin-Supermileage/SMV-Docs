@@ -1,3 +1,8 @@
+networking:
+  label: Networking
+  permalink: /networking
+  description: Networking tag descriptions
+
 facebook:
   label: Facebook
   permalink: /facebook
