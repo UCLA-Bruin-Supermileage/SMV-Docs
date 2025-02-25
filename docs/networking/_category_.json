@@ -1,0 +1,8 @@
+{
+  "label": "Networking Basics",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn about networking principles and how we run the site"
+  }
+}
