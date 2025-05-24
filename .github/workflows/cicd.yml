@@ -1,0 +1,44 @@
+name: Docs – Build & Deploy
+
+on:
+  push:
+    branches:
+      - main        # run when main is updated (merge, direct push, release tag, etc.)
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    permissions:                # ↓ needed for Pages publish
+      contents: write           # push to gh-pages branch
+      pages: write              # (if using the Pages “Actions” target)
+
+    steps:
+      # Check out source
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0        # full history required by gh-pages deploy tools
+
+      # Set up Node (adjust version if you pin Node in package.json)
+      - name: Use Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm            # speeds up jobs by caching ~/.npm
+
+      # Install dependencies & build the static site
+      - name: Install dependencies
+        run: npm ci
+      - name: Build Docusaurus site
+        run: npm run build      # → output goes to ./build by default
+
+      # Deploy the HTML in ./build to the gh-pages branch
+      - name: Publish to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build          # Docusaurus build output
+          publish_branch: gh-pages      # ✱ default for Pages
+          # keep_history: false        # uncomment to squash gh-pages history
+          cname: info.bruinsmv.com    # uncomment if you’re using a custom domain
