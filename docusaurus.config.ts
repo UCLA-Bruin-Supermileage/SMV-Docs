@@ -80,7 +80,7 @@ const config: Config = {
       title: 'Bruin Supermileage',
       logo: {
         alt: 'Bruin Supermileage Logo',
-        src: 'img/SMVLogo-2025',
+        src: 'img/SMVLogo-2025.png',
       },
       items: [
         {
