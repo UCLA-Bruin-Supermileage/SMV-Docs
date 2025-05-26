@@ -3,7 +3,7 @@ name: Docs – Build & Deploy
 on:
   push:
     branches:
-      - cicd-update        # run when main is updated (merge, direct push, release tag, etc.)
+      - main       # run when main is updated (merge, direct push, release tag, etc.)
 
 jobs:
   deploy:
