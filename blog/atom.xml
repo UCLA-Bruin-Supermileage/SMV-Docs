@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://smv.seas.ucla.edu/info/blog</id>
+    <title>The SMV Docs Blog</title>
+    <updated>2025-02-24T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://smv.seas.ucla.edu/info/blog"/>
+    <subtitle>The SMV Docs Blog</subtitle>
+    <icon>https://smv.seas.ucla.edu/info/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Welcome to the SMV Blog]]></title>
+        <id>https://smv.seas.ucla.edu/info/blog/welcome</id>
+        <link href="https://smv.seas.ucla.edu/info/blog/welcome"/>
+        <updated>2025-02-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We're so glad you're here]]></summary>
+        <content type="html"><![CDATA[<p>We're so glad you're here</p>]]></content>
+        <author>
+            <name>Howard Zhu</name>
+            <uri>https://howard-zhu.com</uri>
+        </author>
+        <category label="Hello" term="Hello"/>
+    </entry>
+</feed>
