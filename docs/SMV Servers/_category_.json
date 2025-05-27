@@ -1,6 +1,6 @@
 {
   "label": "SMV Server Documentation",
-  "position": 2,
+  "position": 4,
   "link": {
     "type": "generated-index",
     "description": "Learn about the SMV servers, their configuration, and how to manage them."
