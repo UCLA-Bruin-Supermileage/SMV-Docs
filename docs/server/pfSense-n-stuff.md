@@ -26,7 +26,9 @@ We only have 3 ports that are open to the internet. They are:
 1883    MQTT
 ```
 
-Port 443 and 80 are for our websites. They point to our Nginx reverse proxy manager that handles traffic between our VMs for the documentation server and the main website. Anything path behind `smv.seas.ucla.edu/info` will be sent to the docusaurus server and everything else will be sent to the main website.
+Port 443 and 80 are for our websites. They point to our Nginx reverse proxy manager that handles traffic between our VMs for the documentation server and the main website. Traffic to the URL `smv.seas.ucla.edu` will be forwarded to the frontend Docker container and traffic to `prod-django.bruinsmv.com` will be sent to the API. 
+
+The subdomain `info.bruinsmv.com` is hosted on GitHub pages with a custom domain.
 
 ### Ports Open to the VPN
 
@@ -47,5 +49,5 @@ Port 443 and 80 are for our websites. They point to our Nginx reverse proxy mana
 
 \*\* The firewall request was never confirmed, but it seems that it works? Testing required if you're going to use them.
 
-As of time of writing (March 4, 2025) this is what the NAT Table (port forwarding) rules look like for our pfSense node.
+As of time of writing (May 26, 2025) this is what the NAT Table (port forwarding) rules look like for our pfSense node.
 ![Figure 1](nat-tables.png)
