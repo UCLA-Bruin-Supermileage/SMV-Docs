@@ -14,7 +14,7 @@ const config: Config = {
   url: 'https://smv.seas.ucla.edu',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/info/',
+  baseUrl: '/',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -77,10 +77,10 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Bruin Supermileage',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Bruin Supermileage Logo',
+        src: 'img/SMVLogo-2025.png',
       },
       items: [
         {
@@ -133,7 +133,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Bruin Racing Supermilage Vehicle, Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Bruin Racing Supermileage Vehicle, Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
