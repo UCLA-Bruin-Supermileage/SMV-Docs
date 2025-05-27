@@ -16,20 +16,21 @@ Nginx-Proxy-Manager:
     192.168.69.3:80
 PostgreSQL15:
     192.168.69.15:5432
+API:
+    192.168.69.14
+Frontend:
+    192.168.69.13
 ```
 Minecraft server not listed but here in spirit!
 
 Notice that for Nginx it is not under 192.168.69.2 but is actually under 192.168.69.3. This is also reflected in the previous page for the NAT rules.
 
 ## Virtual Machines (VMs)
-For our deployment of the API, documentation site, and main website are run in virtual machines in Unraid. They are all based on Ubuntu server.
 
-Here are the Docker sites and their IP addresses
+For the mechanical Solidworks server
+
+Here is the VM and its IP address
 ```
-API:
-    192.168.69.14
-Main Site:
-    192.168.69.13
 Windows:
     192.168.69.11
 ```
