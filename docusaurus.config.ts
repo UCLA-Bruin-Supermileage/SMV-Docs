@@ -8,7 +8,7 @@ import rehypeKatex from 'rehype-katex';
 const config: Config = {
   title: 'The SMV Docs',
   tagline: 'The documentation dump for SMV',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/SMVLogo-2025.png',
 
   // Set the production url of your site here
   url: 'https://smv.seas.ucla.edu',
