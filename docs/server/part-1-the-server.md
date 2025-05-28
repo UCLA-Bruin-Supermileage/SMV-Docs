@@ -22,5 +22,6 @@ The network diagram is really simple for the shop:
 ```
 Wall Plate --> pfSense --> switch --> Unraid
 ```
+![Figure 1](./img/smv-network-1.png)
 
 Right now it's a straight line of nodes since the Unraid server breaks out into containers and virtual machines. All devices are wired through ethernet and there is no wireless networking.

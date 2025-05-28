@@ -30,6 +30,16 @@ Port 443 and 80 are for our websites. They point to our Nginx reverse proxy mana
 
 The subdomain `info.bruinsmv.com` is hosted on GitHub pages with a custom domain.
 
+#### Reverse Proxy with NGINX Proxy Manager
+
+  ![Figure 1](./img/smv-network-2.png)
+
+NGINX Proxy Manager routes traffic based on domain:
+| Domain | Internal Service |
+|--------------------------------|-----------------------------|
+| `prod-django.bruinsmv.com` | `192.168.69.14` (API) |
+| `smv.seas.ucla.edu` | `192.168.69.13` (Frontend) |
+
 ### Ports Open to the VPN
 
 ```
