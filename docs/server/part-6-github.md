@@ -76,7 +76,7 @@ git commit -m "Add responsive navbar for mobile layout"
 git push -u origin matthewt-123/start-stop-api
 
 # Open PR via GitHub UI
-
+```
 # UCLA Bruin Supermileage GitHub Repositories
 
 This document lists and describes the key repositories under the [UCLA-Bruin-Supermileage](https://github.com/UCLA-Bruin-Supermileage) organization. All repositories follow our code review rules unless otherwise stated.
