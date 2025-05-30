@@ -1,3 +1,6 @@
+---
+sidebar_position: 5
+---
 # Tailscale Access for Club Server
 
 Tailscale is used to enable secure, remote access to the internal services hosted behind the pfSense router. It leverages WireGuard for encrypted connections and is configured with **subnet routing** to allow direct access to devices and services on the local 192.168.69.0/24 subnet.
