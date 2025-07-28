@@ -1,7 +1,7 @@
 ---
 sidebar_position: 6
 ---
-# GitHub Development Best Practices
+# Hosting and GitHub
 
 This document outlines the GitHub workflow and best practices for developing in the SMV repositories. Please follow this guide to ensure code consistency, maintainability, and deployment readiness.
 
@@ -110,6 +110,13 @@ This document lists and describes the key repositories under the [UCLA-Bruin-Sup
 
 ---
 
+### [bruinsmv.com](https://github.com/UCLA-Bruin-Supermileage/bruinsmv.com)
+- **Description**: The main static website hosted at bruinsmv.com
+- **CI/CD**: Enabled - Builds and deploys site to GitHub pages on merge to `main`
+- **Branch Protection**: **NO** branches are push protected for ease of development. If push protection is required, please contact DAQ leads.
+
+---
+
 ## Library & Firmware Repositories
 
 ### [UCLA-SMV-CAN](https://github.com/UCLA-Bruin-Supermileage/UCLA-SMV-CAN)
@@ -118,8 +125,5 @@ This document lists and describes the key repositories under the [UCLA-Bruin-Sup
 - **Branch Protection**: None.
 - **Review Requirement**: PRs must still be reviewed before merge. Code quality and consistency should be upheld.
 
-
-
-
-
-
+# Hosting Information
+The SMV domain is managed through Cloudflare, and can be accessed via the SMV Gmail account. The two static sites, [bruinsmv.com](https://bruinsmv.com) and [info.bruinsmv.com](https://info.bruinsmv.com), are managed through their respective repositories and automatically updated upon pushing to the main branch. All sites under the bruinsmv.com domain are proxied through Cloudflare for security, caching, and DDoS protection. This may result in delayed propagation of changes made to the website. In case of lockout, contact Matthew Tsai.
